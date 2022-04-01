@@ -1,0 +1,22 @@
+>Сделайте форк репозитория по ссылке;
+https://github.com/1000karat/git-homeworks-neuro-fork
+
+>Скачайте архив изменений;
+>Свяжите локальный репозиторий из архива с форком репозитория из п.1;
+git remote -v
+git remote add origin https://github.com/1000karat/git-homeworks-neuro-fork.git
+git remote -v
+
+>Выполните команду push -u origin main, удостоверьтесь, что конфликт произошёл;
+git push -u origin main
+
+>Заберите актуальную версию данных из удалённого репозитория при помощи команды git pull origin main;
+git pull origin main
+
+>Разрешите появившийся конфликт и отправьте сделанные вами изменения на GitHub.
+git log --graph --oneline --all
+git status
+Изменить js/app.js
+git add *
+git commit -a -m "Edit js/app.js"
+git push -u origin main
